@@ -409,16 +409,6 @@ Licensed under the **Apache License 2.0** — see the [LICENSE](LICENSE) file fo
 
 ---
 
-## 👥 Authors & Maintainers
-
-| Name | Role | GitHub |
-|---|---|---|
-| Stellar OSS Core Team | Lead Maintainers | [@stellar-oss](https://github.com/stellar-oss) |
-
-Want to join the maintainer team? See [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
-
 ## 🙏 Acknowledgments
 
 - [Stellar Development Foundation](https://stellar.org) — for Soroban and the broader ecosystem
@@ -448,6 +438,3 @@ All notable changes to this project are documented in [CHANGELOG.md](CHANGELOG.m
 ## 💬 Support & Contact
 
 - 📚 **Docs:** [docs.stellar-escrow.dev](https://docs.stellar-escrow.dev)
-- 💬 **Discord:** [discord.gg/stellar-oss](https://discord.gg/stellar-oss)
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/stellar-oss/stellar-escrow-protocol/issues)
-- 📧 **Security Vulnerabilities:** security@stellar-oss.dev *(do not open public issues for security bugs)*

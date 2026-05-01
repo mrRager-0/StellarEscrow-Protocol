@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      network:
+        description: "Target network"
+        required: true
+        default: testnet
+        type: choice
+        options: [testnet, mainnet]
+
+jobs:
+  deploy-contracts:
+    name: Deploy Soroban contracts
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.network }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: Swatinem/rust-cache@v2
+      - name: Install stellar-cli
+        run: cargo install --locked stellar-cli --features opt
+      - name: Build contracts
+        run: cargo build --release --target wasm32-unknown-unknown
+      - name: Deploy
+        env:
+          SECRET_KEY: ${{ secrets.STELLAR_SECRET_KEY }}
+          STELLAR_NETWORK: ${{ inputs.network }}
+        run: ./scripts/deploy.sh --network "$STELLAR_NETWORK" --signer "$SECRET_KEY"

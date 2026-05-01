@@ -409,16 +409,6 @@ Licensed under the **Apache License 2.0** — see the [LICENSE](LICENSE) file fo
 
 ---
 
-## 👥 Authors & Maintainers
-
-| Name | Role | GitHub |
-|---|---|---|
-| Stellar OSS Core Team | Lead Maintainers | [@stellar-oss](https://github.com/stellar-oss) |
-
-Want to join the maintainer team? See [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
-
 ## 🙏 Acknowledgments
 
 - [Stellar Development Foundation](https://stellar.org) — for Soroban and the broader ecosystem
